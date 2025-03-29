@@ -1,3 +1,9 @@
+import random
+
+def roll(): 
+    points = random.randint(1, 6)
+    return points
+
 while True:
     num_of_players = input("Select the number of players [2-4]: ")
     if num_of_players.isdigit():
@@ -9,4 +15,4 @@ while True:
     else:
         print("Invalid value, try again.")
 
-points = [0 for _ in range(num_of_players)]
+player_points = [0 for _ in range(num_of_players)]
